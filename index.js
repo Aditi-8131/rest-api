@@ -13,10 +13,4 @@ app.use("/upload",express.static("uploads"));
 app.use(
   bodyParser.urlencoded({
     extended: true,
-  })
-);
- app.use(bodyParser.json());
-app.use('/api', routes);
-app.listen(APP_PORT, () => {
-    console.log(`app run on port ${APP_PORT}`);
-});
+  }));
